@@ -93,7 +93,6 @@ def batch_iter(data, batch_size, num_epochs, shuffle=True):
             end_index = min((batch_num + 1) * batch_size, data_size)
             yield shuffled_data[start_index:end_index]
 
-#那个打分程序报错的话，补上这个缺的函数
 def load_data(lable_data_file):
     lable_examples = list(open(lable_data_file, "r", -1, "utf-8").readlines())
     lable_examples = [s.strip() for s in lable_examples]
