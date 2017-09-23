@@ -212,7 +212,7 @@ with tf.Graph().as_default():
             if current_step % FLAGS.checkpoint_every == 0:
                 path = saver.save(sess, checkpoint_prefix, global_step=current_step)
                 print("Saved model checkpoint to {}\n".format(path))
-                if ifsave:  # 存个备份免得被删了
+                if ifsave: 
                     path = saver.save(sess, MaxAcc_prefi, None)
                     copymax("{}.data-00000-of-00001".format(path))
                     copymax("{}.index".format(path))
