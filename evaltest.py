@@ -18,10 +18,9 @@ tf.flags.DEFINE_string("lable_data_file", "./test-release.txt", "Data source for
 
 # Eval Parameters
 tf.flags.DEFINE_integer("batch_size", 64, "Batch Size (default: 64)")
-#选择最优的模型
 tf.flags.DEFINE_string("checkpoint_dir", "./runs/1496983789/checkpoints/", "Checkpoint directory from training run")
 tf.flags.DEFINE_boolean("eval_train", True, "Evaluate on all training data")
-#
+
 # Misc Parameters
 tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device placement")
 tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on devices")
