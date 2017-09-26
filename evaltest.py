@@ -80,7 +80,7 @@ with graph.as_default():
             batch_predictions = sess.run(predictions, {input_x: x_test_batch, dropout_keep_prob: 1.0})
             all_predictions = np.concatenate([all_predictions, batch_predictions])
 
-f = open("./out2.txt", "w",encoding='utf-8') # 打开文件以便写入
+f = open("./out2.txt", "w",encoding='utf-8')
 for text,pre in zip(x_raw_ori,all_predictions):
     print("%d %s" % (pre,text), file=f)
 
