@@ -67,7 +67,6 @@ shuffle_indices = np.random.permutation(np.arange(len(y)))
 print(type(x),type(y))
 
 x_shuffled = x[shuffle_indices]
-# print(x_shuffled[0:2])
 y_shuffled = y[shuffle_indices]
 
 # Split train/test set
