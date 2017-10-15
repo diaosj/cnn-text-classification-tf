@@ -56,7 +56,7 @@ x_text, y_label = data_helpers.load_data_and_labels(FLAGS.data_file)
 
 # Build vocabulary
 max_document_length = max([len(x.split(" ")) for x in x_text])
-# print(max_document_length)
+
 vocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)
 x = np.array(list(vocab_processor.fit_transform(x_text)))
 y = np.array(y_label)
