@@ -44,7 +44,6 @@ if not FLAGS.checkpoint_dir:
 print("\nParameters:")
 for attr, value in sorted(FLAGS.__flags.items()):
     print("{}={}".format(attr.upper(), value))
-print("")
 
 # CHANGE THIS: Load data. Load your own data here
 if FLAGS.eval_train:
