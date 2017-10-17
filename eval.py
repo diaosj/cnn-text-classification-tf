@@ -16,7 +16,6 @@ import csv
 # ==================================================
 
 # Data Parameters
-
 tf.flags.DEFINE_string("data_file", "./data/dev.txt", "Data source for the evaluation data.")
 tf.flags.DEFINE_boolean("with_labels", False, "Data with label?")
 
